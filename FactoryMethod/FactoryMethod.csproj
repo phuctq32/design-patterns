@@ -43,6 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoffeeShops\CoffeeShop.cs" />
+    <Compile Include="CoffeeShops\SouthernCoffeeShop.cs" />
+    <Compile Include="CoffeeShops\NorthernCoffeeShop.cs" />
+    <Compile Include="Coffee\SouthernWhiteCoffee.cs" />
+    <Compile Include="Coffee\SouthernBlackCoffee.cs" />
+    <Compile Include="Coffee\NorthernBlackCoffee.cs" />
+    <Compile Include="Coffee\ICoffee.cs" />
+    <Compile Include="Coffee\NorthernWhiteCoffee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
