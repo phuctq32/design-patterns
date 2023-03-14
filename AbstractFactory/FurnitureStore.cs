@@ -37,11 +37,11 @@ namespace AbstractFactory
             ITable wTable = factory.CreateTable();
 
             Console.WriteLine("Gia ghe:");
-            Console.WriteLine("* Ghe nhua: " + pChair.GetPrice() + " VND");
-            Console.WriteLine("* Ghe go: " + wChair.GetPrice() + " VND");
+            Console.WriteLine("* " + pChair.GetName() + ": " + pChair.GetPrice() + " VND");
+            Console.WriteLine("* " + wChair.GetName() + ": " + wChair.GetPrice() + " VND");
             Console.WriteLine("Gia ban:");
-            Console.WriteLine("* Ban nhua: " + pTable.GetPrice() + " VND");
-            Console.WriteLine("* Ban go: " + wTable.GetPrice() + " VND");
+            Console.WriteLine("* " + pTable.GetName() + ": " + pTable.GetPrice() + " VND");
+            Console.WriteLine("* " + wTable.GetName() + ": " + wTable.GetPrice() + " VND");
         }
     }
 }
