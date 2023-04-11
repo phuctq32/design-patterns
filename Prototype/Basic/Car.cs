@@ -64,16 +64,25 @@ namespace Prototype.Basic
     //    }
     //}
 
+    public class Wheel
+    {
+        public Wheel() { }
+    }
+
     public class Car : Vehicle
     {
         private int maxSpeed;
+        private Wheel wheels;
         public int MaxSpeed { get => maxSpeed; set => maxSpeed = value; }
+        public Wheel Wheels { get => wheels; set => wheels = value; }
 
         public Car() { }
         public Car(Car car)
             : base(car as Vehicle)
         {
             this.MaxSpeed = car.MaxSpeed;
+            this.Wheels = new Wheel(); 
+                        // car.wheels.Clone();
         }
         public override Vehicle Clone()
         {

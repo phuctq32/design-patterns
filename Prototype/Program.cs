@@ -26,19 +26,19 @@ namespace Prototype
             //Console.WriteLine("car 2: " + car2.ToString());
 
             //Using Prototype Design Pattern
-            Car car3 = car1.Clone() as Car;
+            //Car car3 = car1.Clone() as Car;
 
-            car1.Color = "Blue";
-            Console.WriteLine("car 1: " + car1.ToString());
-            Console.WriteLine("car 3: " + car3.ToString());
+            //car1.Color = "Blue";
+            //Console.WriteLine("car 1: " + car1.ToString());
+            //Console.WriteLine("car 3: " + car3.ToString());
 
-            //VehicleManager vehicleManager = new VehicleManager();
-            //List<Vehicle> vehicles = vehicleManager.GetByColor("Blue");
+            VehicleManager vehicleManager = new VehicleManager();
+            List<Vehicle> vehicles = vehicleManager.GetByColor("Blue");
 
-            //foreach (var vehicle in vehicles)
-            //{
-            //    Console.WriteLine(vehicle.ToString());
-            //}
+            foreach (var vehicle in vehicles)
+            {
+                Console.WriteLine(vehicle.ToString());
+            }
 
             Console.ReadLine();
         }
